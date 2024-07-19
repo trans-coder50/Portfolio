@@ -881,9 +881,8 @@ body{
         align-items: center;
         cursor: pointer;
     }
-    .slide-up i{
-        font-size: 25px;
-        color: white;
+    .slide-up .up svg{
+        fill: white;
     }
     
 }
@@ -1066,7 +1065,7 @@ body{
         justify-content:center;
         align-items: center;
     }
-    .footer-icon i{
+    .footer-icon .up{
         font-size: 20px;
         color: white;
         margin-right: 20px;
@@ -1939,9 +1938,8 @@ body{
         align-items: center;
         cursor: pointer;
     }
-    .slide-up i{
-        font-size: 25px;
-        color: white;
+    .slide-up .up svg{
+        fill: white;
     }
     ::-webkit-scrollbar{
         background-color: rgb(184, 184, 184);
