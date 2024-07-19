@@ -64,6 +64,39 @@ menueOffIcon.onclick = function(){
 
 
 
+
+
+const button = document.querySelector('.slide-up');
+const targetDiv = document.querySelector('footer');
+const fastarrow = document.querySelector(".up svg");
+
+function isOverlapping(elem1, elem2) {
+    const rect1 = elem1.getBoundingClientRect();
+    const rect2 = elem2.getBoundingClientRect();
+
+     return (
+        rect1.top < rect2.bottom &&
+        rect1.bottom > rect2.top     
+    )
+}
+
+function checkOverlap() {
+    if (isOverlapping(button, targetDiv)) {
+        button.style.background = "white";
+        fastarrow.style.fill = "#00CB00";
+    } else {
+        button.style.background = "#00CB00";
+        fastarrow.style.fill = "white";
+    }
+}
+
+window.addEventListener('scroll', checkOverlap);
+window.addEventListener('resize', checkOverlap); // To handle window resizing
+checkOverlap(); // Initial check
+
+
+
+
     
 
 
